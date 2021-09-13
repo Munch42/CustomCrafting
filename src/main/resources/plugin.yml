@@ -1,0 +1,5 @@
+name: CustomCrafting
+version: ${project.version}
+main: ca.munchdev.customcrafting.CustomCrafting
+api-version: 1.17
+depend: [ProtocolLib]

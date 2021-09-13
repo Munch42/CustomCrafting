@@ -1,0 +1,17 @@
+ca\munchdev\customcrafting\listeners\GUIListener$1.class
+ca\munchdev\customcrafting\recipes\ShapelessSuperCraftingRecipe.class
+ca\munchdev\customcrafting\inventories\BaseGUI$guiActions.class
+ca\munchdev\customcrafting\utils\HelperFunctions.class
+ca\munchdev\customcrafting\listeners\BlockPlaceListener$1.class
+ca\munchdev\customcrafting\inventories\TestGUI.class
+ca\munchdev\customcrafting\listeners\GUIListener.class
+ca\munchdev\customcrafting\recipes\ShapedSuperCraftingRecipe.class
+ca\munchdev\customcrafting\CustomCrafting.class
+ca\munchdev\customcrafting\listeners\BlockPlaceListener.class
+ca\munchdev\customcrafting\inventories\CraftingBaseGUI.class
+ca\munchdev\customcrafting\listeners\GUIListener$2.class
+ca\munchdev\customcrafting\inventories\BaseGUI.class
+ca\munchdev\customcrafting\listeners\PlayerInteractListener.class
+ca\munchdev\customcrafting\inventories\CraftingBaseGUI$guiActions.class
+ca\munchdev\customcrafting\inventories\SuperCraftingTableGUI.class
+ca\munchdev\customcrafting\recipes\ShapedVanillaSuperRecipe.class
