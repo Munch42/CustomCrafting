@@ -12,6 +12,10 @@ ca\munchdev\customcrafting\inventories\CraftingBaseGUI.class
 ca\munchdev\customcrafting\listeners\GUIListener$2.class
 ca\munchdev\customcrafting\inventories\BaseGUI.class
 ca\munchdev\customcrafting\listeners\PlayerInteractListener.class
+ca\munchdev\customcrafting\recipes\PlayerHeadSuperCraftingRecipe.class
+ca\munchdev\customcrafting\listeners\PlayerJoinListener.class
 ca\munchdev\customcrafting\inventories\CraftingBaseGUI$guiActions.class
+ca\munchdev\customcrafting\utils\SkullCreator.class
 ca\munchdev\customcrafting\inventories\SuperCraftingTableGUI.class
+ca\munchdev\customcrafting\utils\HeadHelpers.class
 ca\munchdev\customcrafting\recipes\ShapedVanillaSuperRecipe.class

@@ -5,9 +5,13 @@ import ca.munchdev.customcrafting.inventories.TestGUI;
 import ca.munchdev.customcrafting.listeners.BlockPlaceListener;
 import ca.munchdev.customcrafting.listeners.GUIListener;
 import ca.munchdev.customcrafting.listeners.PlayerInteractListener;
+import ca.munchdev.customcrafting.listeners.PlayerJoinListener;
+import ca.munchdev.customcrafting.recipes.PlayerHeadSuperCraftingRecipe;
 import ca.munchdev.customcrafting.recipes.ShapedSuperCraftingRecipe;
 import ca.munchdev.customcrafting.recipes.ShapedVanillaSuperRecipe;
 import ca.munchdev.customcrafting.recipes.ShapelessSuperCraftingRecipe;
+import ca.munchdev.customcrafting.utils.HeadHelpers;
+import ca.munchdev.customcrafting.utils.SkullCreator;
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
 import org.bukkit.Bukkit;
@@ -35,6 +39,7 @@ public final class CustomCrafting extends JavaPlugin implements Listener {
     private ProtocolManager protocolManager;
     private List<ShapedSuperCraftingRecipe> shapedSuperCraftingRecipes = new ArrayList<>();
     private List<ShapedVanillaSuperRecipe> shapedVanillaSuperCraftingRecipes = new ArrayList<>();
+    private List<PlayerHeadSuperCraftingRecipe> shapedHeadSuperCraftingRecipes = new ArrayList<>();
     private List<ShapelessSuperCraftingRecipe> shapelessSuperCraftingRecipes = new ArrayList<>();
 
     @Override
@@ -51,6 +56,7 @@ public final class CustomCrafting extends JavaPlugin implements Listener {
         new GUIListener(this);
         new PlayerInteractListener(this);
         new BlockPlaceListener(this);
+        new PlayerJoinListener(this);
         //Bukkit.getPluginManager().registerEvents(this, plugin);
 
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "CustomCrafting Version " + getDescription().getVersion() + " is enabled!");
@@ -98,6 +104,17 @@ public final class CustomCrafting extends JavaPlugin implements Listener {
         recipeMultipleItemTest.setIngredient('D', new ItemStack(Material.DIRT, 2));
 
         shapedSuperCraftingRecipes.add(recipeMultipleItemTest);
+
+        ShapelessSuperCraftingRecipe shapelessTest = new ShapelessSuperCraftingRecipe(new ItemStack(Material.DIRT));
+        shapelessTest.addIngredient(3, new ItemStack(Material.DIAMOND));
+
+        shapelessSuperCraftingRecipes.add(shapelessTest);
+
+        PlayerHeadSuperCraftingRecipe headRecipeTest = new PlayerHeadSuperCraftingRecipe(new ItemStack(Material.ACACIA_BOAT));
+        headRecipeTest.shape(" H ", "   ", "   ");
+        headRecipeTest.setIngredient('H', new ItemStack(Material.DIRT));
+
+        shapedHeadSuperCraftingRecipes.add(headRecipeTest);
 
         //getServer().getConsoleSender().sendMessage(recipeTest.getResult().toString());
         //getServer().getConsoleSender().sendMessage(Arrays.toString(recipeTest.getShape()));

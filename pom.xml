@@ -79,5 +79,10 @@
             <artifactId>ProtocolLib</artifactId>
             <version>4.7.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.17.1-R0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
